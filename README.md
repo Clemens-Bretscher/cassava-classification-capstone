@@ -1,4 +1,4 @@
-![cassava](Forestryimages_cassava.jpg)
+![cassava](images/Forestryimages_cassava.jpg)
 Source: [www.wikipedia.org](https://en.wikipedia.org/wiki/Cassava_mosaic_virus#/media/File:Forestryimages_cassava.jpg)
 <h1><b>Cassava Disease Classification</b></h1> 
 
