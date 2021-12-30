@@ -78,11 +78,11 @@ Source: [www.wikipedia.org](https://en.wikipedia.org/wiki/Cassava_mosaic_virus#/
 
 <h1><b>Exploratory Data Analysis</b></h1>
 
-<p style="text-align: justify">In this project, for the classification of cassava leaves as healthy and unhealthy through deep learning classification algorithms, a dataset of <b>5656</b> labeled images collected during a regular survey in Uganda is introduced. Most images were crowd-sourced from farmers taking photos of their gardens, and annotated by experts at the National Crops Resources Research Institute (NaCRRI) in collaboration with the AI lab at Makerere University, Kampala.</p> 
+<p style="text-align: justify">In this project, for the classification of cassava leaves as healthy and unhealthy through deep learning classification algorithms, a dataset of <b>21,397</b> labeled images collected during a regular survey in Uganda is introduced (5,656 training set and 15,741 test set). Most images were crowd-sourced from farmers taking photos of their gardens, and annotated by experts at the National Crops Resources Research Institute (NaCRRI) in collaboration with the AI lab at Makerere University, Kampala.</p> 
 
 <span style="color: green"><b>Data Distribution:</b></span>
 
-><p style="text-align: justify"><b>Data Imbalance:</b> From our EDA we have observed an imbalance in the dataset, where CMD has 2,658 observations that account for about <b>46.99</b> percent, CBB <b>8.24</b> percent (466 observations), CBSD <b>25.51</b> percent (1,443 observations) CGM <b>13.67</b> percent (773 observation) and Healthy <b>5.59</b> percent (316 observations).</p>
+><p style="text-align: justify"><b>Data Imbalance:</b> From our EDA we have observed an imbalance in the dataset, where CMD has 2,658 observations that account for about <b>46.99</b> percent, CBB <b>8.24</b> percent (466 observations), CBSD <b>25.51</b> percent (1,443 observations) CGM <b>13.67</b> percent (773 observation) and Healthy <b>5.59</b> percent ( observations).</p>
 
 ><p style="text-align: justify"><b>Missing Values:</b> From our data analysis we have see that there are no missing values.</p>
 
