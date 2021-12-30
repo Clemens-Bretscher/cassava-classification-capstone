@@ -70,19 +70,19 @@ Source: [www.wikipedia.org](https://en.wikipedia.org/wiki/Cassava_mosaic_virus#/
 
 ><b>False positive:</b> Too much cassava will be destroyed although they are healthy (loss in income). 
 
-<span style="text-align: justify">To balance the two short comings we will use <b>F-score</b> that is the harmonic mean of precision and recall. Due to its bias as an evaluation metric $F_{1}$ would not a good score to measure accuracy, because recall and precision are evenly weighted.</span>
+<span style="text-align: justify">To balance the two short comings we will use <b>F-score</b> that is the harmonic mean of precision and recall. Due to its bias as an evaluation metric F1-score would not a good score to measure accuracy, because recall and precision are evenly weighted.</span>
 
 <p style="text-align: justify">The F-beta score is the weighted harmonic mean of precision and recall, reaching its optimal value at 1 and its worst value at 0. The beta parameter determines the weight of recall in the combined score. beta less than 1 lends more weight to precision, while beta greater than 1 favors recall (beta near to zero considers only precision, beta near to +inf only recall).</p>
 
-<span style="text-align: justify">The two other commonly used F measures are the $F_{2}$ score, which weights recall higher than precision, and the $F_{0.5}$ score, which puts more emphasis on precision than recall. Since we want to put more emphasis on recall than on precision the $F_{2}$ will be the best metric in our case.</span>
+<span style="text-align: justify">The two other commonly used F measures are the F2-score, which weights recall higher than precision, and the F0.5-score, which puts more emphasis on precision than recall. Since we want to put more emphasis on recall than on precision the F2-score will be the best metric in our case.</span>
 
 <h1><b>Exploratory Data Analysis</b></h1>
 
-<p style="text-align: justify">In this project, for the classification of cassava leaves as healthy and unhealthy through deep learning classification algorithms, a dataset of <b>21,397</b> labeled images collected during a regular survey in Uganda is introduced. Most images were crowd-sourced from farmers taking photos of their gardens, and annotated by experts at the National Crops Resources Research Institute (NaCRRI) in collaboration with the AI lab at Makerere University, Kampala.</p> 
+<p style="text-align: justify">In this project, for the classification of cassava leaves as healthy and unhealthy through deep learning classification algorithms, a dataset of <b>5656</b> labeled images collected during a regular survey in Uganda is introduced. Most images were crowd-sourced from farmers taking photos of their gardens, and annotated by experts at the National Crops Resources Research Institute (NaCRRI) in collaboration with the AI lab at Makerere University, Kampala.</p> 
 
 <span style="color: green"><b>Data Distribution:</b></span>
 
-><p style="text-align: justify"><b>Data Imbalance:</b> From our EDA we have observed an imbalance in the dataset, where CMD has 13,158 observations that account for about <b>61.5</b> percent, CBB <b>5.1</b> percent (1,087 observations), CBSD <b>10.2</b> percent (2,189 observations) CGM <b>11.2</b> percent (2,386 observation) and Healthy <b>12.0</b> percent (2,577 observations).</p>
+><p style="text-align: justify"><b>Data Imbalance:</b> From our EDA we have observed an imbalance in the dataset, where CMD has 2,658 observations that account for about <b>46.99</b> percent, CBB <b>8.24</b> percent (466 observations), CBSD <b>25.51</b> percent (1,443 observations) CGM <b>13.67</b> percent (773 observation) and Healthy <b>5.59</b> percent (316 observations).</p>
 
 ><p style="text-align: justify"><b>Missing Values:</b> From our data analysis we have see that there are no missing values.</p>
 
