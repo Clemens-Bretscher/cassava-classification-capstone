@@ -1,12 +1,11 @@
-
 try:
     import matplotlib.pyplot as plt
     import itertools
     import numpy as np
-    
-except ImportError as e:
-    #!pip install matplotlib
-    print('{}'.format(e))
+    import sys
+    import subprocess
+except:
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', ['matplotlib','numpy'])
 
 def plot_confusion_matrix(cm, classes,
                           normalize=False,
@@ -48,7 +47,7 @@ def plot_confusion_matrix(cm, classes,
                  horizontalalignment="center",
                  color="white" if cm[i, j] > thresh else "black")
         
-    #plt.grid(None)
+    plt.grid(None)
     plt.tight_layout()
     plt.ylabel('True label', size = 18)
     plt.xlabel('Predicted label', size = 18)
