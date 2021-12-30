@@ -1,4 +1,3 @@
-from pandas.core import indexing
 import streamlit as st
 import numpy as np
 from PIL import Image
@@ -8,12 +7,11 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import time
-import base64
 
-path = '/Users/paulosgidyelew/Desktop/Capstone_Project/data/soup/'
-data_1 = pd.read_csv('/Users/paulosgidyelew/Desktop/cassava-classification-capstone/data/train.csv')
-data_2 = pd.read_csv(path+'soup_3.csv')
-data_info = pd.read_csv('/Users/paulosgidyelew/Desktop/cassava-classification-capstone/data/data_info.csv')
+path = '/Users/paulosgidyelew/Desktop/cassava-classification-capstone/data/'
+data_1 = pd.read_csv(path+'train.csv')
+data_2 = pd.read_csv(path+'soup.csv')
+data_info = pd.read_csv(path+'data_info.csv')
 
 def about():
 
@@ -28,6 +26,7 @@ def about():
         but viral diseases are major sources of poor yields. With the help of data science, 
         it may be possible to identify common diseases so they can be treated.</p>''', unsafe_allow_html=True)
     return
+
 def statistics():
 
     st.markdown('''<h1 style='font-size:25px;color: green'><b>Cassava Leaf Classes and Data Distribution</b></h1>''', unsafe_allow_html=True)
@@ -97,12 +96,6 @@ def customer():
         ax[1].set_xlabel('Year')
         st.pyplot(fig)
     return
-
-
-# class Model:
-#     def __init__(self,image) -> None:
-#         self.image = image
-#         pass
 
 def predict(image,label):
     model = load_model(r'/Users/paulosgidyelew/Desktop/cassava-classification-capstone/saved_model/model_cv')
