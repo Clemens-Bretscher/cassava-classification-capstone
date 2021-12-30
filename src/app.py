@@ -16,13 +16,6 @@ data_2 = pd.read_csv(path+'soup_3.csv')
 data_info = pd.read_csv('/Users/paulosgidyelew/Desktop/cassava-classification-capstone/data/cassava-disease/data_info.csv')
 
 def about():
-    # img = 'images/Forestryimages_cassava.jpg'
-    # st.markdown(f'''
-    #                 <style>
-    #                 .reportview-container {{
-    #                     background: url(data:image/{img};base64,{base64.b64encode(open(img, "rb").read()).decode()})
-    #                 }}
-    #                 </style>''', unsafe_allow_html=True)
 
     st.markdown('''<h1 style='text-align: justify; font-size: 25px;color:green'><b>About Classava.io</b></h1>''', unsafe_allow_html=True)
     st.markdown('''<p style='text-align: justify; font-size: 20px;color:black'>
