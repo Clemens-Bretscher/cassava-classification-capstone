@@ -94,9 +94,11 @@ Source: [www.wikipedia.org](https://en.wikipedia.org/wiki/Cassava_mosaic_virus#/
 
 <span style="color: green"><b>Baseline Model:</b></span>
 
->The baseline model is a function of the dot product of the true label and the individual label with the highest distribution in the whole dataset:
-$\hat{y} = cmd.y$ (dot product of the scaler and vector quantities)
- 
->where $cmd$ is the label with the highest distribution and $y$ is the label in the dataset.
+>The baseline model is a simple sanity check that consists of comparing one’s estimator against simple rules of thumb. The target is, to beat the dummy classifier that makes predictions using simple rules. DummyClassifier implements simple strategies for classification as:
+><ul>
+><li><b>stratified</b> generates random predictions by respecting the training set class distribution.
+>
+><li><b>most_frequent</b> always predicts the most frequent label in the training set.
+></ul>
 
-><p style="text-align:justify"><span style="color:green">From our dataset the probability of getting CMD is <b>61.5%</b>, that of CBB <b>5.1%</b>, CBSD <b>10.2%</b>, CGM <b>11.2%</b> and a Healthy one is <b>12.0%</b>. Due to the imbalance in our dataset the <mark>probability distribution function (accuracy)</mark> can not be a good metric for model prediction.</span></p>
+><p style="text-align:justify"><span style="color:blue">From our dataset the probability of getting CMD is <b>46.99%</b>, that of CBB <b>8.24%</b>, CBSD <b>25.51%</b>, CGM <b>13.67%</b> and a Healthy one <b>5.59%</b>. Our baseline model is a probability function where its prediction is based on a label with the highest probability rate which is CMD(3). However, due to the imbalanced nature of our dataset accuracy can be a misleading metric in our modeling.</span></p>
