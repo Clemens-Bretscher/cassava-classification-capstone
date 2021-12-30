@@ -11,9 +11,9 @@ import time
 import base64
 
 path = '/Users/paulosgidyelew/Desktop/Capstone_Project/data/soup/'
-data_1 = pd.read_csv('/Users/paulosgidyelew/Desktop/cassava-classification-capstone/data/cassava-disease/train.csv')
+data_1 = pd.read_csv('/Users/paulosgidyelew/Desktop/cassava-classification-capstone/data/train.csv')
 data_2 = pd.read_csv(path+'soup_3.csv')
-data_info = pd.read_csv('/Users/paulosgidyelew/Desktop/cassava-classification-capstone/data/cassava-disease/data_info.csv')
+data_info = pd.read_csv('/Users/paulosgidyelew/Desktop/cassava-classification-capstone/data/data_info.csv')
 
 def about():
 
